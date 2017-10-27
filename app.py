@@ -1,10 +1,10 @@
-import tkinter as tk
+﻿import tkinter as tk
 from tkinter import messagebox
 import os
 from random import randint
 class app:
 	def Return(wn):
-		messagebox.showinfo("Logged Out","You have logged out")
+		messagebox.showinfo("Logged Out !"," You have logged out ")
 		wn.destroy()
 		app.Main()
 
@@ -16,7 +16,7 @@ class app:
 		string=""
 		arr=[0,1,12,3,4,5,6,7,8,9,'!','@','#','$','%','^','&','*','-','+',':',',','.','<','>','?','/','\\','{','}','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m']
 		for i in range(0,8): 
-			string+=str(arr[randint(0,43)])
+ 			string+=str(arr[randint(0,43)])
 		messagebox.showinfo("Random Password",string)
 		print(string)
 
@@ -52,7 +52,7 @@ class app:
 		fdet.write(name+"\n")
 		fdet.write(pas)
 		fdet.close()
-		messagebox.showinfo("Congratulations!!","You have Successfully SignedUp!!")
+		messagebox.showinfo("Congratulations !!"," You have Successfully SignedUp !! ")
 		master.destroy()
 		
 
